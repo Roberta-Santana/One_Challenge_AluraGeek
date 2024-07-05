@@ -1,0 +1,16 @@
+{
+    "produto": [
+      {
+        "id": "1",
+        "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+        "descricao": "Descrição do Produto 1",
+        "preco": "R$ 100,00"
+      },
+      {
+        "id": "2",
+        "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
+        "descricao": "1,5 mil visualizações",
+        "preco": "R$ 150,00"
+      }
+    ]
+}
