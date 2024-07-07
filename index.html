@@ -16,63 +16,41 @@
         <section class="estoque">
             <h2>Meus Produtos</h2>
             <ul class="estoque_lista" data-lista>
-              <!--   <li class="produto_card">
-                    <img src="produto1.jp   g" alt="Produto 1">
-                    <p class="descricao">Descrição do Produto 1</p>
-                    <h1 class="preco">R$ 100,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto2.jpg" alt="Produto 2">
-                    <p class="descricao">Descrição do Produto 2</p>
-                    <h1 class="preco">R$ 150,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto3.jpg" alt="Produto 3">
-                    <p class="descricao">Descrição do Produto 3</p>
-                    <h1 class="preco">R$ 200,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto4.jpg" alt="Produto 4">
-                    <p class="descricao">Descrição do Produto 4</p>
-                    <h1 class="preco">R$ 250,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto5.jpg" alt="Produto 5">
-                    <p class="descricao">Descrição do Produto 5</p>
-                    <h1 class="preco">R$ 300,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto6.jpg" alt="Produto 6">
-                    <p class="descricao">Descrição do Produto 6</p>
-                    <h1 class="preco">R$ 350,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto7.jpg" alt="Produto 7">
-                    <p class="descricao">Descrição do Produto 7</p>
-                    <h1 class="preco">R$ 400,00</h1>
-                </li>
-                <li class="produto_card">
-                    <img src="produto8.jpg" alt="Produto 8">
-                    <p class="descricao">Descrição do Produto 8</p>
-                    <h1 class="preco">R$ 450,00</h1>
+                <!-- <li class="produto_card">
+                    <img src="./img/relogio.png" alt="descricao_do_produto">
+                    <div class="card_info">
+                        <p class="descricao">Descrição do Produto</p>
+                        <div class="card_info_info">
+                            <h1 class="preco">R$ XXX,XX</h1>
+                            <img src="./img/lixeira.png" alt="Eliminar" width="20px">
+                       </div>
+                   </div>
                 </li> -->
             </ul>
         </section>
     
         <section class="adicionar">
             <h2>Adicionar Produto</h2>
+            <form class="bloco_form" data-form>
             <div class="adicionar_input">
-                <input type="text" placeholder="Nome do Produto" id="nome">
-                <input type="text" placeholder="Valor" id="valor">
-                <input type="text" placeholder="URL da Imagem" id="imagem">
+                <input type="text" placeholder="Nome do Produto" id="nome" data-nome>
+                <input type="text" placeholder="Valor" id="valor" data-preco>
+                <input type="text" placeholder="URL da Imagem" id="imagem" data-imagem>
             </div>
             <div class="adicionar_button">
-                <button onclick="adicionarProduto()">Guardar</button>
+                <button type="submit">Guardar</button>
                 <button onclick="limparInput()">Limpar</button>
             </div>
+        </form>
         </section>
     </main>
     <script src="./app/conectaApi.js"></script>
-    <script src="./app/mostrarCards.js" type="module"></script>
+    <script type="module" src="./app/mostrarCards.js"></script>
+    <script type="module" src="./app/novoCard.js"></script>
 </body>
+<footer>
+    <h4>AluraGeek</h4>
+    <h3>Desenvolvido por Gleise Roberta</h3>
+    <h4>2024</h4>
+</footer>
 </html>

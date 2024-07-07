@@ -1,11 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
     
 }
-header{
+header, footer{
     text-align: center;
     background-color: blueviolet;
+}
+html, body, main{
+    height: auto;
 }
 
 .cabecalho_titulo{
@@ -13,9 +18,12 @@ header{
 }
 
 main{
-    margin: 3rem;
-    display: flex;
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 1rem;
     justify-content: space-around;
+    min-height: 100vh;
 }
 
 .estoque {
@@ -29,7 +37,11 @@ main{
     flex-wrap: wrap;
     height: 50vh;
 }
+
 .produto_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     list-style-type: none; 
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -39,13 +51,24 @@ main{
     text-align: center;
     background-color: blueviolet;
 }
+
 .produto_card img {
     max-width: 100%;
     border-radius: 8px;
 }
-.descricao {
+.card_info{
+    display: flex;
+    flex-direction: column;
+}
+.nome {
     margin: 10px 0;
 }
+.card_info_info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
 .preco {
     color: rgb(4, 61, 4);
     font-size: 1.5em;
@@ -55,8 +78,8 @@ main{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 25%;
+    justify-content: center;
+    gap:15px;
 }
 .adicionar_input {
     display: flex;
@@ -77,4 +100,9 @@ main{
     border: 1px solid black;
     border-radius: 6px;
     padding: 8px;
+}
+
+footer{
+    padding: 5px 0;
+    margin:20px 0 0 0;
 }
