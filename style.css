@@ -2,26 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    
 }
 header, footer{
     text-align: center;
     background-color: blueviolet;
 }
-html, body, main{
-    height: auto;
-}
 
 .cabecalho_titulo{
-    padding: 30px 0 20px 0;
+    padding: 10px 0 20px 0;
 }
 
 main{
     display:flex;
     flex-direction: row;
     flex-grow: 1;
-    margin: 1rem;
+    margin: 1rem 8rem 1rem 1rem;
     justify-content: space-around;
     min-height: 100vh;
 }
@@ -73,12 +68,12 @@ main{
     color: rgb(4, 61, 4);
     font-size: 1.5em;
 }
+
 .adicionar {
-    margin-top: 20px;
+    margin-top: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap:15px;
 }
 .adicionar_input {
