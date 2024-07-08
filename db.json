@@ -19,10 +19,16 @@
       "id": "MY_6Qik"
     },
     {
-      "nome": "lampada 2",
+      "nome": "Smart Lâmpada Wi-Fi Positivo",
       "preco": "89,00",
       "imagem": "https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX569_.jpg",
-      "id": "OoLYKX1"
+      "id": "0ODiG6C"
+    },
+    {
+      "nome": "Não tenho nem Casa",
+      "preco": "1,00",
+      "imagem": "https://www.motoo.com.br/fotos/2023/11/960_720/royal-enfield_himalayan-450_2024_19_03112023_56800_960_720.jpg",
+      "id": "M47upvh"
     }
   ]
 }

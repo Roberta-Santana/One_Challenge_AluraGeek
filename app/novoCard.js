@@ -10,12 +10,18 @@ async function adicionarProduto(evento){
     const imagem = document.querySelector('[data-imagem]').value;
 
     try{
+        if(nome==' '||preco==' '|| imagem==" "){
+            alert("Preencha todos os campos"); 
+            throw new error;
+        }
+
         await conectaApi.criarCard(nome, preco, imagem);
+        
     } catch(error){
         console.error('Erro ao criar card:', error)
     }
 
-    /* window.location.reload(true); */
+    window.location.reload(true);
 }
 
 form.addEventListener('submit', evento=> adicionarProduto(evento));
