@@ -35,7 +35,7 @@ async function criarCard(nome, preco, imagem){
  
 }
 
-//CHAT GPT-DELETE - chama o fetch,metodo, converte, teste erro
+//chama o fetch,metodo, converte, teste erro
  async function deletarCard(id){
     const conexao = await fetch(`http://localhost:3000/produto/${id}`, {
 

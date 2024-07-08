@@ -4,6 +4,7 @@ import { apagaCard } from "./deletarCard.js";
 const lista = document.querySelector('[data-lista]');
 
 function constroiCard(id, imagem, nome, preco){
+    
     const card = document.createElement('li');
     card.className ="produto_card";
     card.innerHTML = `<img src=${imagem}>
@@ -28,6 +29,7 @@ async function listaDeCards(){
         btDeleta.forEach(bt=>{
             bt.addEventListener('click', ()=> apagaCard(bt.id));
         })
+        
     } catch(error){
         console.error("Erro ao listar produtos:", error);
     }
