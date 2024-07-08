@@ -1,6 +1,26 @@
 import { conectaApi } from "./conectaApi.js";
 
-const inserir = document.querySelector('[data-form]');
+const form = document.querySelector('[data-form]');
+
+async function adicionarProduto(evento){
+    evento.preventDefault();
+
+    const nome = document.querySelector('[data-nome]').value;
+    const preco = document.querySelector('[data-preco]').value;
+    const imagem = document.querySelector('[data-imagem]').value;
+
+    try{
+        await conectaApi.criarCard(nome, preco, imagem);
+    } catch(error){
+        console.error('Erro ao criar card:', error)
+    }
+
+    /* window.location.reload(true); */
+}
+
+form.addEventListener('submit', evento=> adicionarProduto(evento));
+
+/* const inserir = document.querySelector('[data-form]');
 
 function coletarDados(){
     const nome = document.querySelector('[data-nome]').value;
@@ -19,4 +39,4 @@ async function adicionarProduto(){
 
     }
 }
-inserir.addEventListener('submit',adicionarProduto)
+inserir.addEventListener('submit',adicionarProduto) */

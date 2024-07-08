@@ -1,11 +1,17 @@
 import { conectaApi } from "./conectaApi.js";
-
-
  
-botaoLixo.addEventListener("click", ()=> deletarCard(id));
+async function apagaCard(id){
+    try{
+        await conectaApi.deletarCard(id);
+    } catch(error){
+        console.error('Erro ao deletar produto:', error);
+    }
+}
+
+export {apagaCard}; 
+
+/* botaoLixo.addEventListener("click", ()=> deletarCard(id));
 console.log(botaoLixo)  
-
-
 
  async function deletarCard(id) {
     try {
@@ -22,7 +28,7 @@ lixeira.addEventListener("click", async ()=>{
     try{await conectaApi.deletarCard(id);
         card.remove();
     } catch(error){console.error(error)}
-})
+}) */
 
 
 
