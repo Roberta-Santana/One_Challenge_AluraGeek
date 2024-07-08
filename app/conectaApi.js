@@ -22,7 +22,18 @@ async function criarCard(nome, preco, imagem){
     return conexaoConvertida;
 }
 
-export const conectaApi = {
+//CHAT GPT-DELETE
+ async function deletarCard(id){
+    const conexao = await fetch('http://localhost:3000/produto', {
+        method: "DELETE"
+    });
+    if(!conexao.ok){
+        throw new Error('Não foi deletado');
+    }
+
+}
+
+export const conectaApi={
     listarCards,
     criarCard
 }

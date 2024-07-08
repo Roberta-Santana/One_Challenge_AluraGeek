@@ -13,10 +13,22 @@
       "preco": "250,00"
     },
     {
+      "id": "vxQoUgZ",
       "nome": "Smart Lâmpada Wi-Fi Positivo",
       "preco": "45.00",
-      "imagem": "https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX569_.jpg",
-      "id": "vxQoUgZ"
+      "imagem": "https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX569_.jpg"
+    },
+    {
+      "nome": "PHILIPS Fone de ouvido sem fio TWS bluetooth 18 horas TAT1235BK/97",
+      "preco": "155.00",
+      "imagem": "https://m.media-amazon.com/images/I/61uMQCVH0CL._AC_SX679_.jpg",
+      "id": "MY_6Qik"
+    },
+    {
+      "nome": "PHILIPS Fone de ouvido sem fio TWS bluetooth IPX4 15 horas TAT1108BK/00",
+      "preco": "131.00",
+      "imagem": "https://m.media-amazon.com/images/I/51BsRpYc-TL._AC_SX679_.jpg",
+      "id": "NqK9A1g"
     }
   ]
 }
